@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/Last-Context/ctx#"
+     xml:base="http://www.semanticweb.org/Last-Context/ctx"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ctx="http://www.semanticweb.org/Last-Context/ctx#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/Last-Context/ctx"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#detectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#detectedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasAction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasActivity">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#hasActor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasActivityContext -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasActivityContext">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#hasSubContext"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasActor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasCompContext -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasCompContext">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#hasSubContext"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasEcontext -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasEcontext">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#hasSubContext"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasGroup"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasLocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasOwner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasOwner">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#owns"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasResContext -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasResContext">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#hasSubContext"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasRole"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasSubContext -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasSubContext">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Context"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasTContext -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasTContext">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#hasSubContext"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasUContext -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasUContext">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#hasSubContext"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#notAfter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#notAfter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Time-Interval"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Time-Instant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#notBefore -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#notBefore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Time-Interval"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Time-Instant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#owns -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#owns"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#performedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#performedAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Time"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#performedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#performedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#performedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#performedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Environment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Context"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasStatus">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Absent</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Blocked</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Idle</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>OnDuty</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>OutOfService</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>Present</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>Running</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasTime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Time-Instant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#hasURI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Last-Context/ctx#hasURI">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#Action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#ActivityContext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#ActivityContext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#CompContext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#CompContext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#Context -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#Context"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#EContext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#EContext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#Environment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#Group"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#Identity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#Identity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#Place">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#ResContext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#ResContext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#Role"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#Space -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#Space">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#TContext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#TContext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#Time"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#Time-Instant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#Time-Instant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#Time-Interval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#Time-Interval">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/ctx#UContext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/ctx#UContext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Last-Context/ctx#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Actor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Owner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Owner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Resource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Subject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#User">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Actor"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

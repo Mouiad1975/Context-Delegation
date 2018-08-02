@@ -1,0 +1,579 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#"
+     xml:base="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469">
+        <owl:imports rdf:resource="http://www.semanticweb.org/mouiad/del"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasAction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasCAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasActivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasCAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasAttribute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasCAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasCAttribute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasCAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasRole">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasCAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasCAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Altitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Altitude">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Latitude">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Longitude">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasURI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasURI">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#hasValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#CAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Analyst -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Analyst">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Attribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Attribute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Bearer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Bearer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#CAttribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#CAttribute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Context -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Context"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Cooking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Cooking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Credential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Credential"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Distance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Distance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#CAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Doctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Bearer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Exercising -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Exercising">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#CAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Nurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Nurse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Operation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Operation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Bearer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Permission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Permission"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Bearer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Bearer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Role">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#CAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Sitting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Sitting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Subject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Bearer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#CAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#User">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Bearer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Walking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Walking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Watching-TV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Watching-TV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Working -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Working">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Ali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Ali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Analyst"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Alice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Alice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Doctor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Subject"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Ann -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Ann">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Patient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Ann_HR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Ann_HR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Hospital -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Hospital">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Joe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Joe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Doctor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Subject"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#L1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#L1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#L2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#L2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Lab -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Lab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Martha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Martha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Patient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Martha_HR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Martha_HR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Ria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Ria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Nurse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#d1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#d1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Distance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#d2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#d2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Distance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#de2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#de2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/del#Delegatee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#delete -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#delete">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#dr2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#dr2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/del#Delegator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#execute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#execute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#negative -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#negative">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Permission"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#positive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#positive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Permission"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#read -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#read">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#t1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#t1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Time"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#t2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#t2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Time"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#write -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#write">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/2018/6/7/untitled-ontology-469#Action"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

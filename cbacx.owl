@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/Last-Context/cbac#"
+     xml:base="http://www.semanticweb.org/Last-Context/cbac"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cbac="http://www.semanticweb.org/Last-Context/cbac#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/Last-Context/cbac"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#hasDecision -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/cbac#hasDecision"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#hasImpact -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/cbac#hasImpact"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#hasResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/cbac#hasResource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#hasSubject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Last-Context/cbac#hasSubject"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#Decision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/cbac#Decision">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Last-Context/cbac#hasImpact"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Last-Context/cbac#Impact"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#Impact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/cbac#Impact">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Last-Context/cbac#Deny"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Last-Context/cbac#Permit"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#PolicyRule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/cbac#PolicyRule"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#Request -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/cbac#Request"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#RequestType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/cbac#RequestType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/cbac#Resource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/cbac#Role"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Last-Context/cbac#Subject"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#Deny -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#Deny">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#Impact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#Permit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#Permit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#Impact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#access -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#access">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#RequestType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#d1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#d1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#Decision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#d2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#d2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#Decision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#driver -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#driver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#nurse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#nurse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#paramedic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#paramedic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#r1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#r1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#r2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#r2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#read -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#read">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#RequestType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#rs1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#rs1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#rs2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#rs2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#s1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#s1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#s2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#s2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#use -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#use">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#RequestType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Last-Context/cbac#write -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Last-Context/cbac#write">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Last-Context/cbac#RequestType"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

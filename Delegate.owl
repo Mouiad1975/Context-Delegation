@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mouiad/del#"
+     xml:base="http://www.semanticweb.org/mouiad/del"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:del="http://www.semanticweb.org/mouiad/del#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mouiad/del"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#authenticatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/del#authenticatedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#delegatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/del#delegatedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mouiad/del#delegates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#delegatedFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/del#delegatedFor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#delegates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/del#delegates"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#endowsContext -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/del#endowsContext"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#endowsOwnership -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/del#endowsOwnership"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#hasCo-Owner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/del#hasCo-Owner"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#hasConstraint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/del#hasConstraint"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#hasMaxDepth -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/del#hasMaxDepth">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/del#MaxDepth"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#inFormOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/del#inFormOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#isObjectFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/del#isObjectFor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mouiad/del#onResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#ofType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/del#ofType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#onResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/del#onResource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#satisfiedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/del#satisfiedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mouiad/del#satisfies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#satisfies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/del#satisfies"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#withSubject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/del#withSubject"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#isDelegatable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/del#isDelegatable">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#isSoA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/del#isSoA">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#isType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/del#isType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#notAfter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/del#notAfter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#notBefore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/del#notBefore"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#MaxDepth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/del#MaxDepth"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

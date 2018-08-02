@@ -1,0 +1,801 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mouiad/ontologies/con#"
+     xml:base="http://www.semanticweb.org/mouiad/ontologies/con"
+     xmlns:con="http://www.semanticweb.org/mouiad/ontologies/con#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:del="http://www.semanticweb.org/mouiad/del#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mouiad/ontologies/con">
+        <owl:imports rdf:resource="http://www.semanticweb.org/mouiad/del"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#authoriZes -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/del#authoriZes">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Context"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#delegates -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/del#delegates">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Context"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#hasDConstraint -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/del#hasDConstraint">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Context"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#onResource -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/del#onResource">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/del#withSubject -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/del#withSubject">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Subject"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#hasAction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#hasCAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#hasActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#hasActivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#hasCAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#hasAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#hasAttribute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#hasCAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#hasCAttribute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#hasDelType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#hasDelType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#hasLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#hasCAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#hasRole">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#hasCAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#hasTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#hasTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#hasCAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Altitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Altitude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Latitude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Longitude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#depth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#depth">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/del#Delegation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#hasID"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#hasName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#hasURI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#hasURI">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#hasValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#CAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Analyst -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Analyst">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Attribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Attribute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Bearer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Bearer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#CAttribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#CAttribute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Context -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Context"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Cooking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Cooking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Distance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Distance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#CAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Doctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Bearer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Exercising -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Exercising">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#CAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Nurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Nurse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#OnDutyDoctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#OnDutyDoctor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#hasActivity"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Working"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#hasLocation"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Location"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Doctor"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#OnDutyNurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#OnDutyNurse">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#hasActivity"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Working"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#hasLocation"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Location"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Nurse"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Operation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Operation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Bearer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Permission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Permission"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Bearer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Bearer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Role">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#CAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Sitting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Sitting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Subject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Bearer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Temporal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Temporal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/del#Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#CAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#User">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Bearer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Walking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Walking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Watching-TV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Watching-TV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Working -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Working">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Ali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Ali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Analyst"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Alice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Alice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/del#Delegatee"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Subject"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#User"/>
+        <hasActivity rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#w1"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Hospital"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#doctor"/>
+        <hasTime rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#tc1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Ann -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Ann">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Patient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Ann_HR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Ann_HR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Grant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Grant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/del#DelType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Hospital -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Hospital">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Joe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Joe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Subject"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#L1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#L1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#L2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#L2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Lab -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Lab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Martha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Martha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Patient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Martha_HR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Martha_HR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Ria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Ria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/del#Delegator"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Subject"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#User"/>
+        <hasActivity rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#w2"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Hospital"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#nurse"/>
+        <hasTime rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#tc2"/>
+        <del:isSoA rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</del:isSoA>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#Transfer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#Transfer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/del#DelType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#d1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#d1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Distance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#d2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#d2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Distance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#de1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#de1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/del#Delegatee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#de2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#de2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/del#Delegatee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#del1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#del1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/del#Delegation"/>
+        <del:delegatedBy rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Ria"/>
+        <del:delegatedFor rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Alice"/>
+        <del:hasDConstraint rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#tc3"/>
+        <del:hasMaxDepth rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#mxd1"/>
+        <del:onResource rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Martha_HR"/>
+        <hasDelType rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Grant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#delete -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#delete">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#doctor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#doctor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#dr1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#dr1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/del#Delegator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#dr2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#dr2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/del#Delegator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#execute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#execute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#loc1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#loc1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/del#LocationCons"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#mxd1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#mxd1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/del#MaxDepth"/>
+        <depth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</depth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#negative -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#negative">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Permission"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#nurse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#nurse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Nurse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#positive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#positive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Permission"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#read -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#read">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#tc1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#tc1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Temporal"/>
+        <del:withFtime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-30T02:00:00</del:withFtime>
+        <del:withStime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-30T10:00:00</del:withStime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#tc2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#tc2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Temporal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#tc3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#tc3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/del#TimeCons"/>
+        <del:withFtime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-30T01:30:00</del:withFtime>
+        <del:withStime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-30T09:00:00</del:withStime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#w1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#w1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Working"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#w2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#w2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Working"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/con#write -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/con#write">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/ontologies/con#Action"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

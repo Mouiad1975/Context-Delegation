@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mouiad/ontologies/cbac#"
+     xml:base="http://www.semanticweb.org/mouiad/ontologies/cbac"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cbac="http://www.semanticweb.org/mouiad/ontologies/cbac#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#hasCredential -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#hasCredential">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Credential"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#hasDecision -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#hasDecision">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Request"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Decision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#hasEffect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#hasEffect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Decision"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Effect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#hasResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#hasResource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Request"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#AccessAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#AccessAction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Actor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Constraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Constraint"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Credential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Credential"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Decision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Decision">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#hasEffect"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Effect"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#DistanceCons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#DistanceCons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Effect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Effect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Deny"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Permit"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#GroupCons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#GroupCons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#LocationCons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#LocationCons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Owner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Owner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Request -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Request"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#RequestType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#RequestType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Resource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#RoleCons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#RoleCons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Subject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#TimeCons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#TimeCons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#User">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/ontologies/cbac#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Deny -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Deny"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/ontologies/cbac#Permit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/ontologies/cbac#Permit"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

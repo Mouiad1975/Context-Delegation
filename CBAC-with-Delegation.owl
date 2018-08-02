@@ -1,0 +1,2653 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mouiad/Me/CBAC2#"
+     xml:base="http://www.semanticweb.org/mouiad/Me/CBAC2"
+     xmlns:iot-lite="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ssn="http://purl.oclc.org/NET/ssnx/ssn#"
+     xmlns:cdo="http://www.semanticweb.org/mouiad/Me/CBAC-Del#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del">
+        <owl:imports rdf:resource="http://purl.oclc.org/NET/ssnx/ssn"/>
+        <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
+        <owl:imports rdf:resource="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#happensAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#happensAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#happensWhen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#happensWhen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Time"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasAction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasActivity">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasActor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasActor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasContext -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasContext">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#isContextOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasDecision -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasDecision">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Decision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasDevice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasDevice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Device"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasImpact -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasImpact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Decision"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Impact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasLocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasObject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasRequest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasRequest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Policy-Rule"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasRole">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Actor"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasSW -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasSW"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasSubject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasSubject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#RequestType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasUser -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasUser"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#isContextOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#isContextOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#ownedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#ownedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#owns"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Actor"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#owns -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#owns">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Actor"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Device"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasDataValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasDataValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasEndTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasEndTime">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasStartTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasStartTime">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasStatus">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Action"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Activity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Absent</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Blocked</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Idle</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>OnDuty</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>OutOfService</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>Present</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>Running</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasTime">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasURI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasURI">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#id">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Entity -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Entity"/>
+    
+
+
+    <!-- http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Object -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Altitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Altitude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Spatialctx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Application -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Application">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#AtHome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#AtHome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Spatialctx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#AtWork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#AtWork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Spatialctx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Behavioralctx -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Behavioralctx">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Context"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasActivity"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Activity"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Compositectx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#BlindSpotSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#BlindSpotSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#BodyTempSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#BodyTempSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Car -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Car">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#CarSeat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#CarSeat">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Compositectx -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Compositectx">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Context -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Context"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Decision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Decision">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasImpact"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Impact"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Device">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#DiastolicPressureSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#DiastolicPressureSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Environmentalctx -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Environmentalctx">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Compositectx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#EyePressureSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#EyePressureSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Falling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Falling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#GasLeakageSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#GasLeakageSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#HeartBeatSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#HeartBeatSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Impact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Impact">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Permit"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Prohibit"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#InBedTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#InBedTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#InDanger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#InDanger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Unamedctx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#InDinnerTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#InDinnerTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#InEmergency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#InEmergency">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#owns"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Device"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasDevice"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#madeObservation"/>
+                                                                <owl:someValuesFrom>
+                                                                    <owl:Class>
+                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+                                                                            <owl:Restriction>
+                                                                                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest"/>
+                                                                                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+                                                                            </owl:Restriction>
+                                                                            <owl:Restriction>
+                                                                                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observationResult"/>
+                                                                                <owl:someValuesFrom>
+                                                                                    <owl:Class>
+                                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                                            <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+                                                                                            <owl:Restriction>
+                                                                                                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasValue"/>
+                                                                                                <owl:someValuesFrom>
+                                                                                                    <owl:Class>
+                                                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                                                            <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+                                                                                                            <owl:Class>
+                                                                                                                <owl:unionOf rdf:parseType="Collection">
+                                                                                                                    <owl:Class>
+                                                                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                                                                            <owl:Restriction>
+                                                                                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasDataValue"/>
+                                                                                                                                <owl:someValuesFrom>
+                                                                                                                                    <rdfs:Datatype>
+                                                                                                                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                                                                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</xsd:maxInclusive>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </owl:withRestrictions>
+                                                                                                                                    </rdfs:Datatype>
+                                                                                                                                </owl:someValuesFrom>
+                                                                                                                            </owl:Restriction>
+                                                                                                                            <owl:Restriction>
+                                                                                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasTime"/>
+                                                                                                                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                                                                                                                            </owl:Restriction>
+                                                                                                                        </owl:intersectionOf>
+                                                                                                                    </owl:Class>
+                                                                                                                    <owl:Restriction>
+                                                                                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasDataValue"/>
+                                                                                                                        <owl:someValuesFrom>
+                                                                                                                            <rdfs:Datatype>
+                                                                                                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                                                                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">170.0</xsd:minInclusive>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </owl:withRestrictions>
+                                                                                                                            </rdfs:Datatype>
+                                                                                                                        </owl:someValuesFrom>
+                                                                                                                    </owl:Restriction>
+                                                                                                                </owl:unionOf>
+                                                                                                            </owl:Class>
+                                                                                                        </owl:intersectionOf>
+                                                                                                    </owl:Class>
+                                                                                                </owl:someValuesFrom>
+                                                                                            </owl:Restriction>
+                                                                                        </owl:intersectionOf>
+                                                                                    </owl:Class>
+                                                                                </owl:someValuesFrom>
+                                                                            </owl:Restriction>
+                                                                        </owl:intersectionOf>
+                                                                    </owl:Class>
+                                                                </owl:someValuesFrom>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#owns"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Device"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasDevice"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#madeObservation"/>
+                                                                <owl:someValuesFrom>
+                                                                    <owl:Class>
+                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+                                                                            <owl:Restriction>
+                                                                                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest"/>
+                                                                                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+                                                                            </owl:Restriction>
+                                                                            <owl:Restriction>
+                                                                                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observationResult"/>
+                                                                                <owl:someValuesFrom>
+                                                                                    <owl:Class>
+                                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                                            <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+                                                                                            <owl:Restriction>
+                                                                                                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasValue"/>
+                                                                                                <owl:someValuesFrom>
+                                                                                                    <owl:Class>
+                                                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                                                            <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+                                                                                                            <owl:Class>
+                                                                                                                <owl:unionOf rdf:parseType="Collection">
+                                                                                                                    <owl:Class>
+                                                                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                                                                            <owl:Restriction>
+                                                                                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasDataValue"/>
+                                                                                                                                <owl:someValuesFrom>
+                                                                                                                                    <rdfs:Datatype>
+                                                                                                                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                                                                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">55.0</xsd:maxInclusive>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </owl:withRestrictions>
+                                                                                                                                    </rdfs:Datatype>
+                                                                                                                                </owl:someValuesFrom>
+                                                                                                                            </owl:Restriction>
+                                                                                                                            <owl:Restriction>
+                                                                                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasTime"/>
+                                                                                                                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                                                                                                                            </owl:Restriction>
+                                                                                                                        </owl:intersectionOf>
+                                                                                                                    </owl:Class>
+                                                                                                                    <owl:Restriction>
+                                                                                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasDataValue"/>
+                                                                                                                        <owl:someValuesFrom>
+                                                                                                                            <rdfs:Datatype>
+                                                                                                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                                                                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">106.0</xsd:minInclusive>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </owl:withRestrictions>
+                                                                                                                            </rdfs:Datatype>
+                                                                                                                        </owl:someValuesFrom>
+                                                                                                                    </owl:Restriction>
+                                                                                                                </owl:unionOf>
+                                                                                                            </owl:Class>
+                                                                                                        </owl:intersectionOf>
+                                                                                                    </owl:Class>
+                                                                                                </owl:someValuesFrom>
+                                                                                            </owl:Restriction>
+                                                                                        </owl:intersectionOf>
+                                                                                    </owl:Class>
+                                                                                </owl:someValuesFrom>
+                                                                            </owl:Restriction>
+                                                                        </owl:intersectionOf>
+                                                                    </owl:Class>
+                                                                </owl:someValuesFrom>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasAction"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Falling"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasTime"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Unamedctx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#InResturant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#InResturant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Spatialctx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#InSleepingTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#InSleepingTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#InWakeUpTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#InWakeUpTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Latitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Latitude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Spatialctx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#LightIntensitySensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#LightIntensitySensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Longitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Longitude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Spatialctx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#MotionSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#MotionSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OccupancySensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OccupancySensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OccupiedPassengerSeat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OccupiedPassengerSeat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#CarSeat"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasDevice"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#madeObservation"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observationResult"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasValue"/>
+                                                                        <owl:someValuesFrom>
+                                                                            <owl:Class>
+                                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasDataValue"/>
+                                                                                        <owl:someValuesFrom>
+                                                                                            <rdfs:Datatype>
+                                                                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                                                                    <rdf:Description>
+                                                                                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.0</xsd:minInclusive>
+                                                                                                    </rdf:Description>
+                                                                                                    <rdf:Description>
+                                                                                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">110.0</xsd:maxInclusive>
+                                                                                                    </rdf:Description>
+                                                                                                </owl:withRestrictions>
+                                                                                            </rdfs:Datatype>
+                                                                                        </owl:someValuesFrom>
+                                                                                    </owl:Restriction>
+                                                                                </owl:intersectionOf>
+                                                                            </owl:Class>
+                                                                        </owl:someValuesFrom>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Behavioralctx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OnCarRide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OnCarRide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Behavioralctx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OnDutyContext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OnDutyContext">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasActivity"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Activity"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasRole"/>
+                                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Role"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasStatus"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasName"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#id"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Behavioralctx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OnFlight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OnFlight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Behavioralctx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OnTrainRide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OnTrainRide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Behavioralctx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Policy-Rule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Policy-Rule">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasDecision"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Decision"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasImpact"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Impact"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasObject"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Object"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasContext"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Context"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasRequest"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasType"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#RequestType"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasSubject"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Subject"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasContext"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Context"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Rawctx -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Rawctx">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#RequestType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#RequestType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Role"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Spatialctx -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Spatialctx">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Context"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasLocation"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Location"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Compositectx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Spatiotemporalctx -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Spatiotemporalctx">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Compositectx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Subject"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#SystoloicPressureSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SystoloicPressureSensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Temporal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Temporal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Compositectx"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Time">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Unamedctx -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Unamedctx">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Working -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Working">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Activity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasEndTime"/>
+                        <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hasStartTime"/>
+                        <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#TemporalEntity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#AccelerometerD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#AccelerometerD">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Entity"/>
+        <ssn:onPlatform rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#BMI-Accelerometer100"/>
+        <cdo:hasDevice rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#DPSD100"/>
+        <cdo:hasDevice rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#HBSD100"/>
+        <cdo:hasDevice rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SPSD100"/>
+        <cdo:hasSW rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#AccelerometerSW"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#AccelerometerSW -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#AccelerometerSW">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Application"/>
+        <cdo:hasStatus>Running</cdo:hasStatus>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Ali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Ali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Alice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Alice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#BMI-Accelerometer100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#BMI-Accelerometer100">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Buick-SmartCar-2016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Buick-SmartCar-2016">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#BuickPassengerSeat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#BuickPassengerSeat">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Entity"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#CarSeat"/>
+        <ssn:onPlatform rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Buick-SmartCar-2016"/>
+        <cdo:hasDevice rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#CNDingD100"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#CNDingD100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#CNDingD100">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OccupancySensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Comey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Comey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#DPSD100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#DPSD100">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#DiastolicPressureSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#HBSD100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#HBSD100">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#HeartBeatSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Hani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Hani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Heya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Heya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Joe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Joe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Actor"/>
+        <cdo:hasActivity rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#w1"/>
+        <cdo:hasRole rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#paramedic"/>
+        <cdo:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joe</cdo:hasName>
+        <cdo:hasStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OnDuty</cdo:hasStatus>
+        <cdo:id>PE20016V</cdo:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Martha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Martha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Object"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User"/>
+        <cdo:hasAction rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#falling"/>
+        <cdo:hasRole rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#patient"/>
+        <cdo:owns rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#AccelerometerD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#MarthaRecords -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#MarthaRecords"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#O10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#O10">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#O11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#O11">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#O12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#O12">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#O13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#O13">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#O14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#O14">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#O15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#O15">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#O5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#O5">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#O6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#O6">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#O7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#O7">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#O8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#O8">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#O9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#O9">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV10">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV11">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV12">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV13">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV14">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV15">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV5">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV6">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+        <ssn:featureOfInterest rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#sidemirror"/>
+        <ssn:observationResult rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so6"/>
+        <ssn:observedBy rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV7">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV8">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#OV9">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Obj1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Obj1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Obj2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Obj2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Obj3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Obj3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Obj4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Obj4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Obj5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Obj5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Obj6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Obj6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Permit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Permit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Impact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Prohibit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Prohibit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Impact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Rasheed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Rasheed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Ruby -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Ruby">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#MotionSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#MotionSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#BlindSpotSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#BlindSpotSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#EyePressureSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#GasLeakageSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#HeartBeatSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#BodyTempSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#BodyTempSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#GasLeakageSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#LightIntensitySensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#LightIntensitySensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#SPSD100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SPSD100">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SystoloicPressureSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Saeed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Saeed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Sub9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Zafron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Zafron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#Zentan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Zentan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Agent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#access -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#access">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#RequestType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#adelaide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#adelaide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#adelyn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#adelyn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User"/>
+        <cdo:hasRole rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#driver"/>
+        <cdo:owns rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SD6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#analyst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#analyst">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#blindspot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#blindspot">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#bloodPressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#bloodPressure">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#connect -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#connect">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#RequestType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#delete -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#delete">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#RequestType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#diastolicpressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#diastolicpressure">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#doctor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#doctor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#driver -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#driver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#eye-pressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#eye-pressure">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#falling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#falling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Falling"/>
+        <cdo:hasStatus>Present</cdo:hasStatus>
+        <cdo:hasTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T03:00:31</cdo:hasTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#gasLeakage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#gasLeakage">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#heartbeat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#heartbeat">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#homeResident -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#homeResident">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#hugh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#hugh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#human-heartbeat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#human-heartbeat">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#humanblood-diastolic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#humanblood-diastolic">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#humanblood-diastoloic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#humanblood-diastoloic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#humanblood-systolic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#humanblood-systolic">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#humanbody-weight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#humanbody-weight">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#joyce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#joyce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#kendra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#kendra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#lilyana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#lilyana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#lincoln -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#lincoln">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#lyric -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#lyric">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#motion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#motion">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#norman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#norman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#nurse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#nurse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ-value -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ-value">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+        <cdo:hasDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">76.0</cdo:hasDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ-value2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ-value2">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+        <cdo:hasDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.0</cdo:hasDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ-value3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ-value3">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+        <cdo:hasDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">190.0</cdo:hasDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ-value4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ-value4">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+        <cdo:hasDataValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</cdo:hasDataValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ1">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+        <ssn:featureOfInterest rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#weight"/>
+        <ssn:observationResult rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so1"/>
+        <ssn:observedBy rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#CNDingD100"/>
+        <ssn:observedProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#humanbody-weight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ2">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+        <ssn:featureOfInterest rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#diastolicpressure"/>
+        <ssn:observationResult rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so2"/>
+        <ssn:observedBy rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#DPSD100"/>
+        <ssn:observedProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#humanblood-diastolic"/>
+        <cdo:hasTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T03:00:58</cdo:hasTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ3">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+        <ssn:featureOfInterest rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#systolicpressure"/>
+        <ssn:observationResult rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so3"/>
+        <ssn:observedBy rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#SPSD100"/>
+        <ssn:observedProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#humanblood-systolic"/>
+        <cdo:hasTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T03:00:50</cdo:hasTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ4">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+        <ssn:featureOfInterest rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#heartbeat"/>
+        <ssn:observationResult rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so4"/>
+        <ssn:observedBy rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#HBSD100"/>
+        <ssn:observedProperty rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#human-heartbeat"/>
+        <cdo:hasTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T03:00:31</cdo:hasTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#paramedic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#paramedic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#patient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#patient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#pressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#pressure">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#princeton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#princeton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+        <cdo:hasObject rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Martha"/>
+        <cdo:hasSubject rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Joe"/>
+        <cdo:hasType rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#access"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r23">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r25">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r26">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r27">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r28 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r28">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r29 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r29">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r30">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+        <cdo:hasType rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#read"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+        <cdo:hasSubject rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#adelyn"/>
+        <cdo:hasType rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#write"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#r9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#r9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Request"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#read -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#read">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#RequestType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#roomLightIntensity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#roomLightIntensity">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#shane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#shane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#sidemirror -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#sidemirror">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#so1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so1">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+        <ssn:hasValue rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ-value"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#so10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so10">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#so11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so11">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#so12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so12">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#so13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so13">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#so14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so14">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#so15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so15">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#so2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so2">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+        <ssn:hasValue rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ-value2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#so3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so3">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+        <ssn:hasValue rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ-value3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#so4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so4">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+        <ssn:hasValue rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#observ-value4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#so5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so5">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#so6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so6">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#so7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so7">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#so8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so8">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#so9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#so9">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#systolicpressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#systolicpressure">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#teacher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#teacher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#update -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#update">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#RequestType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#w1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#w1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#Activity"/>
+        <cdo:hasEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T06:00:00</cdo:hasEndTime>
+        <cdo:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-29T23:00:00</cdo:hasStartTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#weight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#weight">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mouiad/Me/CBAC-Del#write -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mouiad/Me/CBAC-Del#write">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mouiad/Me/CBAC-Del#RequestType"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
